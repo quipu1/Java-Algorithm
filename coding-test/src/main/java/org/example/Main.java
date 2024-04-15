@@ -16,14 +16,17 @@ public class Main {
 
         double[] scores = Stream.of(br.readLine().split(" ")).mapToDouble(Double::parseDouble).toArray();
 
-        double maxScore = Arrays.stream(scores).max().getAsDouble();
+        double maxScore = -1;
 
         double sum = 0;
         for (double score : scores) {
-            sum += score / maxScore * 100;
+            if (score > maxScore) {
+                maxScore = score;
+            }
+            sum += score;
         }
 
-        bw.write(String.valueOf( sum / n));
+        bw.write(String.valueOf( sum / maxScore * 100 / n));
         bw.flush();
         br.close();
         bw.close();
