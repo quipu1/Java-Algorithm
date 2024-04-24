@@ -1,4 +1,4 @@
 
-`	java:S112	"FDefine and throw a dedicated exception instead of using a generic one.(™½ÂÑÿÿÿÿÿ
-f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ì£‹
-N	java:S106"9Replace this use of System.out or System.err by a logger.(ûÄÏ
+`	java:S112
+"FDefine and throw a dedicated exception instead of using a generic one.(™½ÂÑÿÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ûÄÏ
